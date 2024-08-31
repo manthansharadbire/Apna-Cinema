@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/icon.png">
+    <title>Movie Booking Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Apna Cinema</h1>
+            <nav>
+                <ul>
+                    <li><a href="#movies">Movies</a></li>
+                    <li><a href="#booking">Book Tickets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="movies">
+        <div class="container">
+            <h2>Available Movies</h2>
+            <div class="movie-list">
+                <article class="movie">
+                    <img src="./images/dunkirk.jpeg" alt="Dunkirk">
+                    <h3>Dunkirk</h3>
+                    <p>Dunkirk is a 2017 epic historical war thriller film directed by Nolan. </p>
+                    <button class="book-now">Book Now</button>
+                </article>
+                <article class="movie">
+                    <img src="./images/interstellar.jpg" alt="Interstellar">
+                    <h3>Interstellar</h3>
+                    <p>Interstellar is a 2014 epic science fiction drama film directed by Nolan.</p>
+                    <button class="book-now">Book Now</button>
+                </article>
+             
+            </div>
+        </div>
+    </section>
+
+    <section id="booking">
+        <div class="container">
+            <h2>Book Your Tickets</h2>
+            <form class="booking-form">
+                <label for="movie">Select Movie:</label>
+                <select id="movie" name="movie">
+                    <option value="movie1">Dunkirk</option>
+                    <option value="movie2">Interstellar</option>
+                 
+                </select>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="seats">Number of Seats:</label>
+                <input type="number" id="seats" name="seats" min="1" required>
+
+                <button type="submit">Submit Booking</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <label for="contact-name">Name:</label>
+                <input type="text" id="contact-name" name="contact-name" required>
+
+                <label for="contact-email">Email:</label>
+                <input type="email" id="contact-email" name="contact-email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Movie Booking Website. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
